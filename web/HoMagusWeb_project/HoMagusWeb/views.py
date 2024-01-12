@@ -17,5 +17,3 @@ def run_script(request):
 
         return HttpResponse("Скрипт успешно запущен с аргументом: {}".format(user_input))
     return render(request, 'HoMagusWeb/index.html')
-   
-
