@@ -3,8 +3,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 import subprocess
 
-def index(request):
-    return render(request, 'main/index.html')
+#def index(request):
+#    return render(request, 'main/index.html')
 
 def run_script(request):
     if request.method == 'POST':
