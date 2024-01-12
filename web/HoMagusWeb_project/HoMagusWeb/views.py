@@ -16,6 +16,6 @@ def run_script(request):
         print(result.stdout.decode('utf-8'))
 
         return HttpResponse("Скрипт успешно запущен с аргументом: {}".format(user_input))
-    return render(request, 'your_app/your_template.html')
+    return render(request, 'main/index.html')
    
 
