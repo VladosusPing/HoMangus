@@ -24,6 +24,10 @@
         <li>Консалтинг</li>
       </ul>
     </section>
+    <form action="{% url 'run_script' %}" method="post">
+      {% csrf_token %}
+      <button type="submit">Запустить скрипт</button>
+  </form>
   </main>
   <footer>
     <p>&copy; 2024 Все права защищены.</p>
