@@ -1,0 +1,11 @@
+FROM ununtu:latest
+    #ONBUILD \
+RUN apt-get update -y --fix-missing \
+    && apt-get install -y --no-install-recommends git  \
+    && apt-get autoremove \
+    && rm -rf /var/lib/apt/lists/*
+
+# The rest of your Dockerfile
+WORKDIR /
+EXPOSE 2022
+#CMD [ "sshesame" ]

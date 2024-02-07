@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML5 Boilerplate</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Привет, мир!</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <h1>Page Title</h1>
-  <form method="post" action="{% url 'run_script' %}">
-    <input type="text" name="user_input" required>
-    <button type="submit">Запустить скрипт</button>
-    </form>
+  <header>
+    <h1>Добро пожаловать!</h1>
+    <p>Простой и стильный дизайн для главной страницы.</p>
+  </header>
+  <main>
+    <section>
+      <h2>О нас</h2>
+      <p>Мы - ваш надежный партнер в создании удивительных проектов.</p>
+    </section>
+    <section>
+      <h2>Наши услуги</h2>
+      <ul>
+        <li>Веб-разработка</li>
+        <li>Дизайн</li>
+        <li>Консалтинг</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Все права защищены.</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
-
-</html> 
-   <!-- your_template.html -->
-
+</html>
