@@ -6,6 +6,9 @@ import subprocess
 #def index(request):
 #    return render(request, 'main/index.html')
 
+def index(request):
+    return render(request, 'index.html')
+
 def run_script(request):
     if request.method == 'POST':
         user_input = request.POST.get('user_input', '')  # Получаем значение из формы

@@ -19,6 +19,7 @@ from django.urls import path
 from .views import run_script
 
 urlpatterns = [
+    path("", index, name="index"),
     path("admin/", admin.site.urls),
     path('run_script/', run_script, name='run_script'),
 ]
